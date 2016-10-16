@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的主页</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<img src="images/index_logo.png">	
+    <ul class="nav">
+    	<li>
+    		<div class="circle">
+    			<i class="noactive"></i>
+    		    <a href="works.html">我的作品</a>
+    		</div>
+    	</li>
+    	<li>
+    		<div class="circle">
+    		    <i class="noactive"></i>
+    		    <a href="#">我的首页</a>
+    		</div>
+    	</li>
+    	<li>
+    		<div class="circle">
+    		    <i class="noactive"></i>
+    		    <a href="my.html">我的简历</a>
+    		</div>
+    	</li>
+    </ul>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script>
+        var nummove=0;
+        var numout=0;
+        $(".nav li").hover(
+        	function(){
+        	   if(nummove==0){
+        		   nummove=1;
+                   $(this).find(".circle").animate({width:"0px",left:$(this).width()/2},80,function(){nummove=0;});
+                   $(this).find(".circle").animate({width:""+$(this).height(),left:0});
+                   $(this).find("i").removeClass("noactive");
+                }
+            },
+            function(){
+            	if(numout==0){
+            		numout=1;
+            		$(this).find(".circle").animate({width:"0px",left:$(this).width()/2},80,function(){numout=0;});
+            		$(this).find(".circle").animate({width:""+$(this).height(),left:0});
+            		$(this).find("i").addClass("noactive");
+                    numout=0;
+            	}
+            }
+        )
+        	
+        	        
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+.top_box_head .top_box_head_right{
+	height:38px;
+	width:850px;
+	padding-top:7px;
+}
+.top_box_head_right .left{
+	padding-right:50px;
+}
+/*标题的链接*/
+.top_box_head_right .head_content{
+	font-family:"微软雅黑";
+	font-size:0px;
+	width:335px;
+}
+.head_content a:hover{
+	color:#699f00;
+}
+.head_content .list{
+	display: inline-block;
+	height:25px;
+	position: relative;
+	padding-top:5px;
+}
+.list .list_item{
+	font-size:14px;
+	color:#e5e5e5;
+}
+.list .upload{
+	width:12px;
+	height:12px;
+	display: inline-block;
+	overflow: hidden;
+	background-position: -132px -5px;
+}
+.list .spot{
+	width:7px;
+	height:7px;
+	display: inline-block;
+	background-position: -135px -19px;
+	position: absolute;
+	left:42px;
+	top:4px;
+	overflow: hidden;
+}
+.list .spot2{
+	width:7px;
+	height:7px;
+	display: inline-block;
+	background-position: -135px -19px;
+	position: absolute;
+	left:72px;
+	top:4px;
+	overflow: hidden;
+}
+.list .sanjiao{
+	width:10px;
+	height:5px;
+	display: inline-block;
+	overflow: hidden;
+	background-position: -135px -29px;
+}
+/*搜索框*/
+.found_box .title_found{
+	width:368px;
+	height:28px;
+	border:1px solid #acb2a3;
+}
+
+.found_bg_box .found_bg{
+	width:90px;
+	height:30px;
+	display: inline-block;
+	background-position: -8px -5px;
+}
+/*页面页脚  条*/
+.foot_box .foot_top{
+	height:28px;
+	line-height: 28px;
+	width:850px;
+	margin: 0 auto;
+}
+.foot_top .foot_top_text{
+	font-size: 12px;
+	font-weight: bold;
+	height:28px;
+	line-height: 28px;
+	padding:0px 10px 0px 11px;
+}
+.foot_top .foot_top_text1{
+
+	padding-left:0px;
+}
+.foot_top .foot_top_text2{
+	padding-right:0px;
+}
+.foot_top .foot_line{
+	width:1px;
+	height:12px;
+	background-color: #7f7f7f;
+	margin:6px 0px 0px 0px;
+}
+/*页面页脚   底*/
+.foot_box .foot_foot{
+	width:260px;
+	margin:0 auto;
+}
+.foot_foot .foot_foot_text{
+	height:28px;
+	line-height:28px;
+	font-size:12px;
+	color:#999999;
+	padding-right:4px;
+}
+.foot_box .foot_foot{
+	width:260px;
+	margin:0 auto;
+}
+.foot_foot .foot_foot_text{
+	height:28px;
+	line-height:28px;
+	font-size:12px;
+	color:#999999;
+	padding-right:4px;
+}
+/*广告*/
+.content_box .other_div{
+	position: relative;
+}
+.other_div .guanggao_box{
+	width:35px;
+	height:20px;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+.guanggao_box .guanggao_box_bg{
+	width:35px;
+	height:20px;
+	position: absolute;
+	background-color: #003366;
+}
+.guanggao_box .guanggao_box_text{
+	width:35px;
+	height:20px;
+	position: absolute;
+	font-size:12px;
+	color:#fff;
+	text-align: center;
+}
+.other_div .other_div_ico{
+	width:136px;
+	height:49px;
+	position: absolute;
+	background-position: -264px 0px;
+	right:132px;
+	top:34px;
+}
+.other_div .other_div_ico1{
+	width:86px;
+	height:85px;
+	background-image: url(../img/erweima.png);
+	position: absolute;
+	right:105px;
+	top:9px;
+}

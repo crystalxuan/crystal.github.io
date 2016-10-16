@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的作品</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/works.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+		<div id="header">
+			<a href="">
+				<img src="images/logo.png" class="logo_img">
+				
+			</a>
+			<ul>
+				<li>
+				   <i></i>
+                   <a href="index.html">我的首页</a>
+			    </li>
+			    <li>
+				   <i></i>
+				   <a href="#" class="active">我的作品</a>
+			    </li>
+			    <li>
+				   <i></i>
+				   <a href="my.html">我的简历</a>
+			    </li>
+			</ul>
+		</div>
+		<div id="content_out">
+			<div class="lefthand"></div>
+			<div class="righthand"></div>
+			<h1>个人作品</h1>
+			<div class="content">
+				<ul>
+					<li><a href="http://crystalli.pw/Holiday">
+						<div class="demo1">
+						  <div class="goin"><h1>点击进入</h1></div>
+					    </div></a></li>
+					<li><a href="http://crystalli.pw/aiqiyi-mobile">
+						<div class="demo2">
+						  <div class="goin"><h1>点击进入</h1></div>
+					    </div>
+					</a></li>
+					<li><a href="http://crystalli.pw/jquery">
+						<div class="demo3">
+						  <div class="goin"><h1>点击进入</h1></div>
+					    </div></a></li>
+					<li><a href="http://crystalli.pw/demo2">
+                          <div class="demo4">
+						  <div class="goin"><h1>点击进入</h1></div>
+					    </div>
+					</a></li>
+					<li><a href="http://crystalli.pw/picture">
+                          <div class="demo5">
+						  <div class="goin"><h1>点击进入</h1></div>
+					    </div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+        <div id="footer"></div>
+</body>
+<script>
+	(function(){
+		$(".content li").mousemove(function(){
+            $(this).find(".goin").show();
+		});
+		$(".content li").mouseout(function(){
+			$(".goin").hide();
+		});
+	})();
+</script>
+</html>

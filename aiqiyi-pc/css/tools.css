@@ -1,0 +1,181 @@
+/*推广广告*/
+.content_box .extend{
+width:1180px;
+}
+/*动漫 体育*/
+.size_box1{
+	width: 1180px;
+	padding-bottom: 15px;
+}
+
+/*居中*/
+.wap{
+	margin:0 auto;
+}
+/*雪碧图*/
+.bg{
+	background-image: url(../img/bg.gif);
+	background-repeat: no-repeat;
+}
+.bg_bg{
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+}
+/*浮动*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after{
+   content: "";
+   display: block;
+   clear: both;
+ }
+ /*margin*/
+.margin_14{
+	margin-right:14px;
+}
+.margin_10{
+	margin-right:10px;
+}
+.margin_5{
+	margin-bottom:5px;
+}
+.margin_3{
+	margin-right:3px;
+}
+.margin_8{
+	margin-right:8px;
+}
+.margin_12{
+	margin-right:12px;
+}
+.margin_4{
+	margin-right:4px;
+}
+/*padding*/
+.padding_3_1{
+	padding-right:3px;
+}
+.padding_3{
+	padding:0px 3px;
+}
+.padding_8{
+	padding-right:8px;
+}
+.padding_17{
+	padding-top:17px;
+}
+/*color*/
+.cccccc{
+	color:#cccccc;
+}
+/*横线*/
+.hengxian{
+	width:7px;
+	height:2px;
+	background-position: -133px -279px;
+	display: inline-block;
+	margin-top: 10px;
+	overflow: hidden;
+}
+/*下载*/
+.download_ico{
+	width:7px;
+	height:8px;
+	background-position: -133px -285px;
+	display: inline-block;
+	margin-top: 7px;
+	overflow: hidden;
+}
+/*上传*/
+.shangchuan_ico{
+	width:7px;
+	height:8px;
+	background-position: -133px -296px;
+	display: inline-block;
+	margin-top: 7px;
+	overflow: hidden;
+	vertical-align: top;
+}
+.width160{
+	width:160px;
+}
+.width1180{
+	width:1180px;
+}
+.width250{
+	width:250px;
+}
+.width85{
+	width:85px;
+}
+.width980{
+	width:980px;
+}
+.width150{
+	width:150px;
+}
+.width440{
+	width:440px;
+}
+.width780{
+	width:780px;
+}
+.width400{
+	width:400px;
+}
+.height24{
+	height:24px;
+}
+.height34{
+	height:34px;
+}
+.height36{
+	height:36px;
+}
+.height14{
+	height:14px;
+}
+.height29{
+	height:29px;
+}
+.height45{
+	height:45px;
+}
+/*转成块*/
+.block{
+	display: block;
+}
+/*padding*/
+.padding10 {
+	padding-top:10px;
+}
+/*背景*/
+.black{
+	background-color: #000;
+}
+/*---------------------------电影------------------------------*/
+/*字体大小为0*/
+.font_size0{
+	font-size: 0px;
+}
+/*宽*/
+.width93{
+	width:93px;
+}
+/*14px白色字体*/
+.a_14_fff{
+	font-size:14px;
+	color:#fff;
+}
+/*a_hover*/
+.a_hover:hover{
+	color: #78b600;
+}
+

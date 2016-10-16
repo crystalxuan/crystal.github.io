@@ -1,0 +1,14 @@
+/*左浮动*/
+.fl{
+	float:left;
+}
+/*右浮动*/
+.fr{
+	float:right;
+}
+/*清浮动*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}

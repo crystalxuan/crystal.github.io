@@ -1,0 +1,20 @@
+.content_table{
+   margin:0 auto;
+   border:1px solid #699;
+   border-collapse: collapse;
+   position: relative;
+   table-layout: fixed;
+}
+.content_table td,tr{
+	padding:10px;
+
+	border:1px solid #699;
+}
+.jineng{
+	text-align: left;
+}
+.content_tr{
+	background:#E0E0E0;
+	font-weight: bold;
+   text-align: center;
+}

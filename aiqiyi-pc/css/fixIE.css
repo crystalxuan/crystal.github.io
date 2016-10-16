@@ -1,0 +1,117 @@
+.found_bg_box .found_bg,.top_box_top .link,.bottom_bg_box .bottom_title,.bottom_line_box .bottom_line{
+	*display: inline;
+	*zoom:1;	
+}
+.item4_right_list .num .item4_right_list .decration,.buttom_box .yijian,.buttom_box .register{
+	*display: inline;
+	*zoom:1;
+}
+.found_box .title_found{
+	*padding:0;
+	*margin:0;
+	*float:left;
+	
+}
+.head_content .list,.top_right_item a,.text_box .text_ico,.img_box .link,.program_head_left .program_ico{
+	*display: inline;
+	*zoom:1;
+}
+.head_content .list,.focus_left_head .play,.talk_head .more,.brother_head .brother_head,.entertainment_head_right .head_ico{
+	*display: inline;
+	*zoom:1;
+	
+}
+.focus_left_bottom_list1 .link,.focus_left_bottom_list2 .link,.entertainment_item .entertainment_center_link,.entertainment_img_box .entertainment_left_link,.entertainment_center_img_box .entertainment_right_link{
+	*display: inline;
+	*zoom:1;
+	*filter:alpha(opacity=0);
+	*background-color: #fff;
+}
+.list .upload,.program_head_left .more,.program_head_left .divided,.program_img_box .ico_list1,.program_content_left .program_link,.advertainment_one_head .advertainment_one_head_ico,{
+	*display: inline;
+	*zoom:1;
+}
+.list .spot,.program_right_list .program_note,.focus_left_content .foucs_content_ico,.text_box .text,.movie_right_list .movie_list_text{
+	*display: inline;
+	*zoom:1;
+}
+.program_item .program_center_link,.content_right_content_img_box .program_right_link,.content_bottom_left_header .content_bottom_left_header_link,.talk_show_img_box .talk_show_link,.brother_img_box .brother_link{
+	*display: inline;
+	*zoom:1;
+	*filter:alpha(opacity=0);
+	*background-color: #fff;
+}
+	
+.list .sanjiao,.advertainment_one_content .advertainment_one_ico_left,.movie_head_right .movie_head_right_ico,.movie_right_list .num,.decration .decration_ico{
+	*display: inline;
+	*zoom:1;
+}
+.bg_box .text_bg,.date_box .date_bg,.game_bottom_bg_box .game_bg,.sub_nav .sub_nav_bg,.yule_top_content_list1 .yule_top_content_list1_hover{
+	*filter:alpha(opacity=50);
+}
+.item1_img_box .item1_img_box_bg,.item1_img_bg_box .item1_img_box_bg,.item1_img_bg_box .item1_img_box_bg1,.item2_date_box .item2_date_box_bg{
+	*filter:alpha(opacity=50);
+}
+.item4_date_box .item4_date_box_bg,.item4_1080p_box .item4_1080p_box_bg{
+	*filter:alpha(opacity=50);
+}
+.focus .focus_right  a,.like_center_img_box .like_center_link,.movie_center_img_box .movie_link,.micro_left_center_img_box .micro_link,.sports_left_center_img_box .sports_link{
+	*filter:alpha(opacity=0);
+	*background-color: #fff;
+}
+.item1_img_box .item1_link,.item1_left .item1_left_link,.item2_img_box .item2_link,.item4_img_box .item4_link{
+	*filter:alpha(opacity=0);
+	*background-color: #fff;
+}
+.entertainment_content_center .item2{
+	*margin-top:-15px;
+}
+.tv_center_img_box .tv_link,.comic_left_center_img_box .comic_link,.child_left_center_img_box .comic_link,.education__left_center_img_box .comic_link{
+	*filter:alpha(opacity=0);
+	*background-color: #fff;
+}
+.ico_box .item5_right_link,.item5_left_img_box .item5_link{
+	*filter:alpha(opacity=0);
+	*background-color: #fff;
+}
+.yule_top_content_list3 .yule_top_content_list3_hover:hover,.yule_top_content_list1 .yule_top_content_list1_hover:hover{
+	*filter:alpha(opacity=30);
+	*background-color: #000;
+}
+.yule_top_content_list1 .yule_top_content_list1_hover,.yule_top_content_list3 .yule_top_content_list3_hover{
+	*filter:alpha(opacity=50);
+	*background-color: #000;
+}
+
+/*---------------------------电影------------------------------*/
+.head_left .aiqiyi_ico,.title .head_dian,.head_left .title,.top_box_head,.nav_right_.nav_right_line,.nav_right_list4 .shangchuan_ico{
+	*display: inline;
+	*zoom:1;
+}
+.nav_right .nav_right_list4,.nav_right .nav_right_list5,.nav_right .nav_right_list6{
+	*display: inline;
+	*zoom:1;
+}
+.sub_nav_left .sub_nav_line,.dy_content_bottom_text_box .dy_bottom_text,.dy_bottom_text .dy_content_bottom_ico，.ban_nav .ban_line{
+	*display: inline;
+	*zoom:1;
+}
+.dy_content_bottom_text_box .dy_bottom_text1,.dy_content_bottom_text_box dt .dy_bottom_text1_box,.dy_bottom_text1_box .dy_bottom_line{
+	*display: inline;
+	*zoom:1;
+}
+.sub_nav .sub_nav_bg,.dy_content_bottom .dy_content_bottom_bg,.p1080_box .ban_p1080_bg{
+	*filter:alpha(opacity=50);
+}
+.dy_content_bottom_text_box dd,.dy_content_bottom_text_box dt,.dy_decration .dy_decration_ico,.dy_decration .dy_decration_text{
+	*display: inline;
+	*zoom:1;
+}
+.ban_list_img_box .ban_list_link,.ban_list_img_box2 .ban_list_link,.ban_list_img_box3 .ban_list_link{
+	*filter:alpha(opacity=0);
+	*background-color: #fff;
+}
+.dy_ban_head_right .jindu,.dy_ban_head_right .shengyu,.dy_ban_head_right .gong{
+	*display: inline;
+	*zoom:1;
+}

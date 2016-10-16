@@ -1,0 +1,25 @@
+body,h2,h3,p{
+	margin:0;
+	font-size:14px;
+}
+input{
+	margin:0;
+	padding:0;
+	border:none;
+}
+dl,dd{
+	margin:0px;
+}
+a{
+	text-decoration: none;
+	color:#333333;
+}
+ul,ol{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+img{
+	border:none;
+	vertical-align: top;
+}
