@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>澳洲旅游首页</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script src="js/iepng.js" type="text/javascript"></script>
+<script src="js/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.min_v1.0.js" type="text/javascript"></script>
+<script src="js/slides.min.jquery_v1.0.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div id="logo"><img src="images/logo.png" /></div>
+<div class="hea_bot">
+                   <div class="hea_bot_01">
+                       <div class="header_bot_rig_01"><strong>关注我们:&nbsp;</strong><img src="images/wei01.png" />&nbsp;<a href="#">新浪微博</a>&nbsp;&nbsp;<img src="images/wei02.png" />&nbsp;<a href="#">腾讯广播</a></div>
+                       <div class="header_bot_rig">
+                             
+                             
+                             <script>
+								 $(document).ready(function(){
+									 $(".showArea").click(function(){
+										 if($(".selectUl").css("display")=="block")
+										 {
+											$(".selectUl").stop().slideUp();
+										 }else{
+											$(".selectUl").stop().slideDown();
+										 }
+									 });
+									 $(".selectUl li").hover(function(){
+										 $(this).addClass("hover");
+										 },function(){
+											 $(this).removeClass("hover");
+											 }).click(function(){
+												 $(".selectUl").stop().slideUp();
+												 var val=$(this).html();
+												 if(val != "")
+												   $(".showArea").html(val);
+												 $("#selCampus").val($(this).attr("title"));
+												 });
+									 });
+							 </script>
+                     
+                             <div class="ind_main01_b_bot">
+                                     <div class="soso_L01">
+                                           <span class="showArea">目的地</span>
+                                           <ul class="selectUl hide">
+                                                <li title="">目的地01</li>
+                                                <li title="">目的地02</li>
+                                            </ul>
+                                     </div>
+                                     <div class="soso">
+                                          <div class="header_ss04_02"><input name="请输入关键字" type="text" value="请输入关键字" class="text01" id="txtsearch" /><input name="searchbtn" type="button" class="button01" /></div>
+                                    </div>
+                                    <div class="soso_ym">热门搜索：<a href="#">海南风光</a><a href="#">张家界</a><a href="#">海南风光</a></div>
+                            </div>
+                              
+                       </div>
+                   </div>
+                   
+                   <div class="nav">
+                        <div class="ulnav">
+                        	<ul>
+                        	<li>
+		<a href="index.html"><b> 网站首页</b></a>
+        <a href="intro.html"><b> 澳洲当旅游 </b></a>  
+        <a href="intro1.html"><b> 新西兰当地旅游 </b></a>
+        <a href="list.html"><b> 自由行/高端定制团 </b></a>  
+        <a href="map.html"><b> 特种游 </b></a> 
+        <a href="menpiao.html"><b> 景点门票 </b></a>
+        <a href="soso.html" class="current"><b> 澳洲回国特价机票 </b></a>
+        </li>
+                         </ul> 
+                         <ul class="cl"></ul>   
+                        </div> 
+                   </div>
+             </div>
+             
+<div id="mainbox">
+	<div class="indmain">
+       <div class="banner">
+       
+       <div id="focus">
+		<div id="slides">
+			<style type="text/css">
+            ul.pagination{width:90px !important;}
+        </style>
+			<div class="slides_container">
+				<a href="#" title="" rel="external">
+				<img src="images/banner.jpg" alt="" /></a>
+				<a href="#" title="" rel="external">
+				<img src="images/banner.jpg" alt="" /></a>
+				<a href="#" title="" rel="external">
+				<img src="images/banner.jpg" alt="" /></a>
+                <a href="#" title="" rel="external">
+				<img src="images/banner.jpg" alt="" /></a>
+				<a href="#" title="" rel="external">
+				<img src="images/banner.jpg" alt="" /></a>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$(function(){
+	$('#slides').slides({
+		preload: true,
+		preloadImage: 'images/loading.gif',
+		play: 3000,
+		pause: 1500,
+		hoverPause: true,
+		fadeSpeed: 350,
+		effect: 'fade'
+	});
+});
+
+</script>
+
+<div style="text-align:center;clear:both">
+</div>
+       
+       </div>
+       <div class="box964">
+       		<div class="map_left">
+            	<div class="box_r_line">
+                	<h1>旅游畅销排名</h1>
+                    <ul class="ranklist">
+                    	<li>
+                        <div style="display:none;" class="itemlong">
+                        <span class="num num1"></span>
+                        <a href="#" class="ico" title="" target="_blank"><img src="images/img1.jpg" alt=""></a>
+                        </div>
+                        <div style="" class="itemshort">
+						<span class="num num1"></span>
+						<h3><a href="#" title="" target="_blank">凯恩斯二日游套餐：...</a></h3>
+					</div>
+                        </li>
+                        <li>
+                        <div style="" class="itemlong">
+                        <span class="num num2"></span>
+                        <a href="#" class="ico" title="" target="_blank"><img src="images/img1.jpg" alt=""></a>
+                        <div>
+							<h3><a href="#" title=" " target="_blank">凯恩斯二日游套餐：...</a></h3>
+						</div>
+                        </div>
+                        <div style="display:none;" class="itemshort">
+						<span class="num num2"></span>
+						<h3><a href="#" title="" target="_blank">凯恩斯二日游套餐：...</a></h3>
+					</div>
+                        </li>
+                        <li>
+                        <div style="display:none;" class="itemlong">
+                        <span class="num num3"></span>
+                        <a href="#" class="ico" title="" target="_blank"><img src="images/img1.jpg" alt=""></a>
+                        </div>
+                        <div style="" class="itemshort">
+						<span class="num num3"></span>
+						<h3><a href="#" title="" target="_blank">凯恩斯二日游套餐：...</a></h3>
+					</div>
+                        </li>
+                        <li>
+                        <div style="display:none;" class="itemlong">
+                        <span class="num num4"></span>
+                        <a href="#" class="ico" title="" target="_blank"><img src="images/img1.jpg" alt=""></a>
+                        </div>
+                        <div style="" class="itemshort">
+						<span class="num num4"></span>
+						<h3><a href="#" title="" target="_blank">凯恩斯二日游套餐：...</a></h3>
+					</div>
+                        </li>
+                        <li>
+                        <div style="display:none;" class="itemlong">
+                        <span class="num num5"></span>
+                        <a href="#" class="ico" title="" target="_blank"><img src="images/img1.jpg" alt=""></a>
+                        </div>
+                        <div style="" class="itemshort">
+						<span class="num num5"></span>
+						<h3><a href="#" title="" target="_blank">凯恩斯二日游套餐：...</a></h3>
+					</div>
+                        </li>
+                        <li>
+                        <div style="display:none;" class="itemlong">
+                        <span class="num num6"></span>
+                        <a href="#" class="ico" title="" target="_blank"><img src="images/img1.jpg" alt=""></a>
+                        </div>
+                        <div style="" class="itemshort">
+						<span class="num num6"></span>
+						<h3><a href="#" title="" target="_blank">凯恩斯二日游套餐：...</a></h3>
+					</div>
+                        </li>
+                        <li>
+                        <div style="display:none;" class="itemlong">
+                        <span class="num num6"></span>
+                        <a href="#" class="ico" title="" target="_blank"><img src="images/img1.jpg" alt=""></a>
+                        </div>
+                        <div style="" class="itemshort">
+						<span class="num num6"></span>
+						<h3><a href="#" title="" target="_blank">凯恩斯二日游套餐：...</a></h3>
+					</div>
+                        </li>
+                        <li>
+                        <div style="display:none;" class="itemlong">
+                        <span class="num num7"></span>
+                        <a href="#" class="ico" title="" target="_blank"><img src="images/img1.jpg" alt=""></a>
+                        </div>
+                        <div style="" class="itemshort">
+						<span class="num num7"></span>
+						<h3><a href="#" title="" target="_blank">凯恩斯二日游套餐：...</a></h3>
+					</div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="traveling">
+                	<h1>自由行/高端定制团精品推荐</h1>
+                    <ul>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    </ul>
+                </div>
+                <div class="traveling">
+                	<h1>留言板</h1>
+                    <ul>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    <li><a href="#">凯恩斯二日游套餐：摩尔大堡礁游...</a></li>
+                    <li><a href="#">外海大堡礁超值一日游（含外堡礁...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="soso_right">
+            	<div class="sososo">
+            	<div class="so_soso">
+                	<div class="sos_left">景点</div>
+                    <div class="sos_right">
+                    <ul>
+                        <li><a href="#">水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">天目湖公园</a><span style="color:#666">（11130）</span></li>
+                      
+                        </ul>
+                    	<ul class="clear" style="line-height:0px;"></ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="so_soso">
+                	<div class="sos_left">主题</div>
+                    <div class="sos_right">
+                    <ul>
+                        <li><a href="#">水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">天目湖公园</a><span style="color:#666">（11130）</span></li>
+                      
+                      </ul>
+                    	<ul class="clear" style="line-height:0px;"></ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="so_soso">
+                	<div class="sos_left"><span class="solist_left">旅游类型</span></div>
+                    <div class="sos_right">
+                    <ul>
+                        <li><a href="#">水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">天目湖公园</a><span style="color:#666">（11130）</span></li>
+                      
+                      </ul>
+                    	<ul class="clear" style="line-height:0px;"></ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="so_soso">
+                	<div class="sos_left"><span class="solist_left">旅游主题</span></div>
+                    <div class="sos_right">
+                    <ul>
+                        <li><a href="#">水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">天目湖公园</a><span style="color:#666">（11130）</span></li>
+                      
+                      </ul>
+                    	<ul class="clear" style="line-height:0px;"></ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="so_soso">
+                	<div class="sos_left">景点</div>
+                    <div class="sos_right">
+                    <ul>
+                        <li><a href="#">水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">湖山水公园</a><span style="color:#666">（11130）</span></li>
+                        <li><a href="#">天目湖公园</a><span style="color:#666">（11130）</span></li>
+                      
+                        </ul>
+                    	<ul class="clear" style="line-height:0px;"></ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                </div>
+                <div class="d_list">计划名称<span class="d_ml">出发地</span><span class="d_ml40">目的地</span><span class="d_ml58">发布时间</span><span class="d_ml26"> 发布人</span></div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg2"><img src="images/jb_img16.jpg" width="96" height="72" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+                    <div class="d_listnr">
+                    	<div class="d_list_l d_listbg1"><img src="images/jb_img14.jpg" /></div>
+                        <div class="d_list_r">
+                        	<div class="left blue"><a href="#">8月13日早出发去南澳</a></div>
+                            <div class="cf">汕头</div>
+                            <div class="md">汕头</div>
+                            <div class="time">08-09</div>
+                            <div class="ren"><img src="images/jb_img15.jpg" /><span style="color:#ff6c00;"> 麦拉克</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="d_list_rb">
+                        	<span class="r">发布时间为：08-07</span>
+                        	<span class="l hui1" style="background:url(images/jb_img12.jpg) no-repeat left center;"><a href="#">回复</a>（<span style="color:#ff6c00;">15</span>）</span>
+                            <span class="m hui1"><a href="#">浏览</a>（<span style="color:#ff6c00;">454</span>）</span></div>
+                        <div class="d_cl"></div>
+                    </div>
+            </div>
+       		<div class="clear"></div>
+       </div>
+       
+    </div>
+</div>
+<div class="footer">地址：这里是您公司的地址   电话：854897855   传真：010-123548875 <br />
+版权所有：您公司的名字   技术支持：大家一起努力呀   备案号 </div>
+<div class="foot"></div>
+</body>
+</html>
