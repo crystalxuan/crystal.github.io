@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;	
+				position: relative;
+			}
+			a{
+				text-decoration: none;
+				color: #337bac;
+			}
+			header{
+				height: 55px;
+				border-bottom:1px solid #e9e9e2 ;
+				background: #f6f6f1;
+				padding-top:20px ;
+				padding-left: 200px;
+			}
+			.headBox{
+				width: 670px;
+				height: 33px;
+				/*margin: 0 auto;*/
+			}	
+			h1{
+				width: 115px;
+				padding-top: 27px;
+				background: url(img/lg_book_a11_1.png) no-repeat;
+				overflow: hidden;
+				margin: 0 40px 0 0;
+				float: left;
+			}
+			h2,p{
+				margin: 0;
+			}
+			.bookLink:hover{
+				background: #3377aa;
+				color: #fff;
+				
+			}
+			.import{
+				width: 506px;
+				height: 32px;
+				float: left;
+				border-bottom: 1px solid #d1d1d1;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+			.import #text1{
+				width: 459px;
+				height: 31px;
+				border: none;
+				padding: 0;
+				margin: 0;
+				float: left;
+				outline:none;
+				padding-left:10px ;
+			}
+			.import #bnt{
+				width:37px;
+				height: 32px;
+				padding: 0;
+				margin: 0;
+				float: right;
+				border: none;
+				background: url(img/nav_bg_a1.png) no-repeat 0 -40px;
+			}
+			.import #bnt:hover{
+				background: url(img/nav_bg_a1.png) no-repeat -40px -40px;
+			}
+			#contentBox{
+				position: relative;
+			}
+			#loading{
+				width: 146px;
+				height: 95px;
+				background: url(img/loading.gif) no-repeat;
+				position: absolute;
+				top: 200px;
+				left: 50%;
+				margin-left: -73px;
+				display: none;
+			}
+			#title1{
+				width: 100%;
+				height: 50px;
+				border-bottom: 1px solid #D1D1D1;
+				padding-left: 200px;
+			}
+			#title1 span{
+				float: left;
+				font: 16px/50px "微软雅黑";
+				/*margin-left: 10px;*/
+			}
+			#content{
+				width: 800px;
+				padding: 0;
+				list-style: none;
+				margin: 50px 0 50px 200px;
+			}
+			#content li{
+				width: 100%;
+				height: 170px;
+				padding-top: 30px;
+				border-top: 1px dashed #dddddd;
+			}
+			.bookImg{
+				float: left;
+			}
+			.bookText{
+				max-width: 600px;
+				float: left;
+				margin-left: 30px;
+				margin-top: 10px;
+				
+			}
+			.bookText h2{
+				font-size: 14px;
+				font-weight: normal;
+				font-family: arial;
+				margin-bottom: 10px;
+				display: block;
+			}
+			.bookText .author{
+				font-size: 14px;
+				font-family: "微软雅黑";
+				color: #666666;
+			}
+			.bookText a span{
+				font-size: 14px;
+			}
+			.evaluate{
+				font-size:12px ;
+				margin-top: 20px;
+			}
+			.evaluate .star{
+				width: 55px;
+				height: 11px;
+				display: inline-block;
+				background-image: url(img/ic_rating_s.png);
+				background-repeat: no-repeat;
+				background-position-x: 0;
+			}
+			.evaluate .grade{
+				margin: 0 5px;
+				color: #e09015;
+			}
+			.evaluate .number{
+				color: #666666;
+			}
+			#popBox{
+				width: 100%;
+				background: rgba(255,255,255,0);
+				position: absolute;
+			}
+			#popBox #popup{
+				width: 600px;
+				height: 450px;
+				background: rgba(250,250,250,0.9);
+				margin:100px auto;
+				border-radius: 20px;
+				box-shadow: 5px 5px 20px #000;
+				overflow: hidden;
+			}
+			#popup header{
+				height: 30px;
+				padding: 0;
+				background: none;
+				border: none;
+			}
+			#popup #close{
+				float: right;
+				font:bold 30px/30px "微软雅黑";
+				margin-right: 10px;
+				cursor: pointer;
+			}
+			.bookBox{
+				width: 100%;
+				height: 160px;
+			}
+			.bookBox .left{
+				float: left;
+			}
+			.left .bookCover{
+				float: left;
+				margin: 0 10px;
+			}
+			.bookDetails{
+				max-width: 250px;
+				font: 14px/18px "微软雅黑";
+				float: left;
+			}
+			.bookDetails p{
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				display: block;
+				margin-bottom: 3px;
+			}
+			.right{
+				width: 170px;
+				height: 100%;
+				border-left: 1px solid #ddd;
+				float: right;
+				padding-left: 30px;
+			}
+			.gradeBox{
+				margin-top: 10px;
+			}
+			.right .gradeText{
+				font-size: 12px;
+				color: #9b9b9b;
+			}
+			.score{
+				font: 30px arial;
+				color: #494949;
+				margin-bottom: 8px;
+			}
+			.scoreStar{
+				width: 75px;
+				height: 15px;
+				background: url(img/ic_rating_s2.png);
+				margin-bottom: 8px;
+			}
+			.gradeNum{
+				font: 14px "微软雅黑";
+			}
+			.attempt span{
+				font-size: 14px;
+				color: #007722;
+				margin-left: 5px;
+			}
+			.attempt p{
+				max-height: 130px;
+				font: 12px/20px "微软雅黑";
+				padding: 10px;
+				overflow: hidden;
+				text-indent: 2em;
+			}
+			.attempt e{
+				margin-left: 10px;
+				display: block;
+			}
+			.unfold{
+				font-size: 12px;
+				color: #3377aa;
+				margin-left: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.unfold:hover{
+				color: #fff;
+				background: #3377aa;
+			}
+			#pageBox{
+				width: 490px;
+				margin: 0 auto 50px;
+				text-align: center;
+				
+			}
+			#pageBox span{
+				display: block;
+				font: 14px/40px "微软雅黑";
+			}
+			#pageBox a{
+				padding: 0 10px;
+				height: 25px;
+				border: 1px solid #ccc;
+				font: 12px/25px arial;
+				display: inline-block;
+				margin: 0 5px;
+			}
+			.show{
+				background: #ADFF2F;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="headBox">
+				<h1></h1>
+				<div class="import">
+					<input type="text" placeholder="书名、作者、ISBN" id="text1"/>
+					<input type="button" id="bnt"/>
+				</div>
+			</div>
+		</header>
+		<div id="contentBox">
+			<div id="title1">
+				<span>请输入书名、作者、ISBN查询书籍</span>
+			</div>
+			<div id="loading"></div>
+			<ul id="content">
+				<!--<li>
+					<div id="bookImg">
+						<a href="javascript:;">
+							<img src="img/s1957104.jpg"/>
+						</a>
+					</div>
+					<div id="bookText">
+						<h2>
+							<a href="javascript:;">
+								javascript
+								<span> : The Good Parts </span>
+							</a>
+						</h2>
+						<div class="author">克罗克福特 / 东南大学出版社 / 2009-1 / 28.00元</div>
+						<div class="evaluate">
+							<span class="star"></span>
+							<span class="grade">9.2</span>
+							<span class="number">(76人评价)</span>
+						</div>
+							
+					</div>
+				</li>-->
+				
+			</ul>
+			<div id="pageBox">
+				<!--<a href="#">首页</a>
+				<a href="#">上一页</a>
+				<a href="#" class="show">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">下一页</a>
+				<a href="#">尾页</a>-->
+			</div>
+		</div>
+		<div id="popBox">
+			<div id="popup">
+				<!--<header>
+					<span id="close">×</span>
+				</header>
+				<div class="bookBox">
+					<div class="left">
+						<img src="img/s1957104.jpg" class="bookCover"/>
+						<div class="bookDetails">
+							<p>作者：<a href="##">克罗克福特 </a></p>
+							<p>出版社: 东南大学出版社</p>
+							<p>副标题: The Good Parts</p>
+							<p>出版年: 2009-1</p>
+							<p>页数: 153</p>
+							<p>定价: 28.00元</p>
+							<p>装帧: 平装</p>
+							<p>ISBN: 9787564114473</p>
+						</div>
+					</div>
+					<div class="right">
+						<span class="gradeText">豆瓣评分</span>
+						<div class="gradeBox">
+							<div class="score">9.2</div>
+							<div class="scoreStar"></div>
+							<div class="gradeNum">
+								<a href="##">(0人评价)</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="attempt">
+					<span>内容简介  · · · · · ·</span>
+					<p></p>
+					<e>……</e>
+					<div class="unfold">展开全部</div>
+				</div>-->
+			</div>
+		</div>
+			
+		<script>
+			var bnt = document.getElementById("bnt");
+			var text1 = document.getElementById("text1");
+			var content = document.getElementById("content");
+			var title1 = document.querySelector("#title1 span");
+			var popBox = document.getElementById("popBox");
+			var popup = document.getElementById("popup");
+			var close = document.getElementById("close");
+			var pageBox1 = document.getElementById("pageBox");
+			var loading = document.getElementById("loading");
+			window.location.hash = "#1"
+			var pagination = 0;
+			popBox.style.top = 0;
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+			popBox.style.left = -((popBox.offsetWidth)+2000)+"px";
+			popBox.style.height = (document.documentElement.clientHeight)+"px";
+			popBox.style.transition = "1s";
+			window.onscroll=function(){
+				var scroll=document.body.scrollTop||document.documentElement.scrollTop;
+				popBox.style.top = scroll+"px";
+			}
+			function fn1(data){
+				loading.style.display = "none";
+				pageBox.style.display = "block"
+				title1.innerHTML = "搜索结果共"+data.total+"   当前页显示"+data.start+"-"+(data.start+data.books.length);
+				pagination = parseInt(Math.ceil(data.total/10));
+				var aaa =  parseInt(window.location.hash.substring(1));
+				if(data.books.length == 0){
+					pageBox1.style.display = "none";
+					title1.innerHTML = "没有查询到本书，请确认查询的书名"
+				}else{
+					pageBox1.style.display = "block";
+				}
+				pageBox1.innerHTML = ""
+					page({
+						id:"pageBox",
+						nowNum :aaa,
+						allNum :pagination
+					})
+				for (var i = 0;i<data.books.length;i++) {
+					var li = document.createElement("li");
+					var div1 = document.createElement("div");
+					div1.className = "bookImg";
+					var a1 = document.createElement("a");
+					a1.index = i;
+					var img = document.createElement("img");
+					img.src = data.books[i].image;
+					a1.appendChild(img);
+					div1.appendChild(a1);
+					li.appendChild(div1);
+					var div2 = document.createElement("div");
+					div2.className = "bookText";
+					var h2 = document.createElement("h2");
+					var a2 = document.createElement("a");
+					a2.className = "bookLink"
+					a2.innerHTML = data.books[i].title;
+					a2.index = i;
+					a1.onclick = fn
+					a2.onclick = fn
+					function fn(){
+						document.body.style.overflow = "hidden";
+						popup.innerHTML = ""
+						fn2(this.index)
+						popBox.style.left = 0;
+					}
+					if(data.books[i].subtitle != ""){
+						var span1 = document.createElement("span");
+						span1.innerHTML = ":"+data.books[i].subtitle;
+						a2.appendChild(span1);
+					}
+					div2.appendChild(h2);
+					h2.appendChild(a2);
+					li.appendChild(div2);
+					var div3 = document.createElement("div");
+					div3.className = "author";
+					div3.innerHTML =  data.books[i].author[0]+"/"+data.books[i].publisher+"/"+data.books[i].pubdate+"/"+data.books[i].price
+					div2.appendChild(div3);
+					var div4 = document.createElement("div");
+					div4.className = "evaluate";
+					div2.appendChild(div4);
+					var span2 = document.createElement("span");
+					span2.className = "star";
+					var average = parseInt(data.books[i].rating.average);
+					for (var j = 0;j<=10;j++) {
+						if(parseInt(average) == j){
+							span2.style.backgroundPositionY = -(j*11)+"px";
+						}
+					}
+					var span3 = document.createElement("span");
+					span3.innerHTML = data.books[i].rating.average;
+					span3.className = "grade";
+					var span4 = document.createElement("span");
+					span4.innerHTML = "("+data.books[i].rating.numRaters+"人评价)";
+					span4.className = "number";
+					div4.appendChild(span2);
+					div4.appendChild(span3);
+					div4.appendChild(span4);
+					content.appendChild(li);
+					function fn2(a){
+						var header = document.createElement("header");
+						popup.appendChild(header);
+						var span1 = document.createElement("span");
+						span1.id = "close";
+						span1.innerHTML = "×";
+						span1.onclick = function(){
+							popBox.style.left = -((popBox.offsetWidth)+2000)+"px";
+							document.body.style.overflow = ""
+						}
+						header.appendChild(span1);
+						var div1 = document.createElement("div");
+						div1.className = "bookBox";
+						popup.appendChild(div1);
+						var div2 = document.createElement("div");
+						div2.className = "left";
+						div1.appendChild(div2);
+						var img = document.createElement("img");
+						img.src = data.books[a].image;
+						img.className = "bookCover";
+						div2.appendChild(img);
+						var div3 = document.createElement("div");
+						div3.className = "bookDetails";
+						div2.appendChild(div3);
+						var p1 = document.createElement("p");
+						p1.innerHTML = "作者："+data.books[a].author[0];
+						var p2 = document.createElement("p");
+						p2.innerHTML = "出版社："+data.books[a].publisher;
+						if(data.books[a].subtitle != ""){
+							var p3 = document.createElement("p");
+							p3.innerHTML = "副标题："+data.books[a].subtitle;
+							div3.appendChild(p3)
+						}
+						var p4 = document.createElement("p");
+						p4.innerHTML = "出版年："+data.books[a].pubdate;
+						var p5 = document.createElement("p");
+						p5.innerHTML = "页数："+data.books[a].pages;
+						var p6 = document.createElement("p");
+						p6.innerHTML = "定价："+data.books[a].price;
+						var p7 = document.createElement("p");
+						p7.innerHTML = "装帧："+data.books[a].binding;
+						var p8 = document.createElement("p");
+						p7.innerHTML = "ISBN："+data.books[a].isbn13;
+						div3.appendChild(p1)
+						div3.appendChild(p2)
+						div3.appendChild(p4)
+						div3.appendChild(p5)
+						div3.appendChild(p6)
+						div3.appendChild(p7)
+						div3.appendChild(p8)
+						var div4 = document.createElement("div");
+						div4.className = "right";
+						div1.appendChild(div4);
+						var span2 = document.createElement("span");
+						span2.className = "gradeText";
+						span2.innerHTML = "豆瓣评分";
+						div4.appendChild(span2);
+						div5 = document.createElement("div");
+						div5.className = "gradeBox";
+						div4.appendChild(div5);
+						div6 = document.createElement("div");
+						div6.className = "score";
+						div6.innerHTML = data.books[a].rating.average;
+						div5.appendChild(div6);
+						div7 = document.createElement("div");
+						div7.className = "scoreStar";
+						for (var i = 0;	i<=10;i++) {
+							if(parseInt(data.books[a].rating.average) == i){
+								div7.style.backgroundPositionY = -(i*15)+"px";
+							}
+						}
+						div5.appendChild(div7);
+						div8 = document.createElement("div");
+						div8.className = "gradeNum";
+						div5.appendChild(div8);
+						var a1 = document.createElement("a");
+						a1.target = "view_window";
+						a1.innerHTML = "("+data.books[a].rating.numRaters+"人评价)";
+						a1.href = "https://book.douban.com/subject/"+data.books[a].id+"/collections";
+						div8.appendChild(a1)
+						var div9 = document.createElement("div");
+						div9.className = "attempt";
+						popup.appendChild(div9)
+						var span3 = document.createElement("span");
+						span3.innerHTML = "内容简介  · · · · · ·";
+						div9.appendChild(span3);
+						var p9 = document.createElement("p");
+						p9.innerHTML = data.books[a].summary;
+						div9.appendChild(p9);
+						var e = document.createElement("e");
+						e.innerHTML = "……";
+						div9.appendChild(e);
+						var div10 = document.createElement("div");
+						div10.className = "unfold";
+						div10.innerHTML = "展开全部";
+						div9.appendChild(div10);
+						div10.onclick = function(){
+							p9.style.maxHeight = "220px";
+							p9.style.overflow = "auto"
+							e.style.display = "none";
+							div10.style.display = "none"
+						}
+					}
+				}
+			}
+			bnt.onclick = datum;
+			document.onkeydown = function(e){
+				if(e.keyCode == 13){
+					datum(0)
+				}
+			}
+			function datum(hash1){
+				window.location.hash = 0;
+				content.innerHTML = ""
+				if (oscript) {
+					document.body.removeChild(oscript);
+				}
+				if (text1.value != "") {
+					loading.style.display = "block";
+					pageBox.style.display = "none"
+					var oscript = document.createElement("script");
+				oscript.src = "https://api.douban.com/v2/book/search?q="+text1.value+"&start="+(hash1*10)+"&count=10&callback=fn1";
+				document.body.appendChild(oscript);
+				}
+			}
+
+			function page(opt){
+				if(!opt.id){
+					return false
+				}
+				var obj = document.getElementById(opt.id);
+				var nowNum = opt.nowNum || 1;
+				var allNum = opt.allNum || 5;
+				if (nowNum>=4 && allNum>=6) {
+					var oa = document.createElement("a");
+					oa.href = "#1";
+					oa.innerHTML = "首页";
+					obj.appendChild(oa);
+				}
+				if(nowNum>=2){
+					var oa = document.createElement("a");
+					oa.href = "#"+(nowNum-1);
+					oa.innerHTML = "上一页";
+					obj.appendChild(oa);
+				}
+				if (opt.allNum<=5) {
+					for (var i=1;i<=opt.allNum;i++) {
+						var oa = document.createElement("a");
+						oa.href = "#"+i;
+						oa.innerHTML = i;
+						if (nowNum == i) {
+							oa.className = "show"
+						} else{
+							oa.className = ""
+						}
+						obj.appendChild(oa);
+					}
+				} else{
+					for (var i=1;i<=5;i++) {
+						var oa = document.createElement("a");
+						if (nowNum == 1 || nowNum ==2) {
+							if(nowNum == i){
+								oa.className = "show";
+							}else{
+								oa.className = "";
+							}
+								oa.href = "#"+i;
+								oa.innerHTML = i;
+						}else if((allNum-nowNum)==0||(allNum-nowNum)==1){
+							oa.href = "#"+(allNum-5+i)
+							oa.innerHTML = (allNum-5+i)
+							if((allNum-nowNum)==0 && i == 5){
+								oa.className = "show";
+							}else if((allNum-nowNum)==1 && i == 4){
+								oa.className = "show";
+							}else{
+								oa.className = "";
+							}
+						}else{
+							oa.href = "#"+((nowNum-3)+i);
+							oa.innerHTML = ((nowNum-3)+i);
+							if (i == 3) {
+								oa.className = "show"
+							} else{
+								oa.className = ""
+							}
+						}
+							
+						obj.appendChild(oa);
+					}
+				}
+				if((allNum-nowNum)>=1){
+					var oa = document.createElement("a");
+					oa.href = "#"+(nowNum+1);
+					oa.innerHTML = "下一页";
+					obj.appendChild(oa);
+				}
+				if ((allNum-nowNum)>=3 && allNum>=6) {
+					var oa = document.createElement("a");
+					oa.href = "#"+allNum;
+					oa.innerHTML = "尾页";
+					obj.appendChild(oa);
+				}
+				var span = document.createElement("span");
+				span.innerHTML = "第"+nowNum+"页,共"+allNum+"页"
+				obj.appendChild(span);
+				var aA = obj.getElementsByTagName("a");
+				for (var i=0;i<aA.length;i++) {
+					aA[i].onclick = function(){
+						popBox.style.top = 0;
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop = 0;
+						var nowNum = parseInt(this.getAttribute('href').substring(1));
+						scrollTop=0;
+						obj.innerHTML = "";
+						page({
+							id:opt.id,
+							nowNum :nowNum,
+							allNum :allNum
+						})
+						datum(nowNum-1)
+						console.log(nowNum)
+						
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
