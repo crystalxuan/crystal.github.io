@@ -1,0 +1,137 @@
+body,h1,ul,li,h5,input{
+	margin:0;
+	padding:0;
+	font-size: 12px;
+}
+body{
+	position: relative;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	/*color: #000;*/
+}
+.headbox{
+	width:100%;
+	height:50px;
+	background-color: #252525;
+	box-shadow: 0 0 5px #000;
+	color: #d8d8d8;
+}
+/*log*/
+.headbox h1 .log{
+	width:110px;
+	height:0;
+	display: block;
+	padding-top:28px;
+	background: url(../img/bg_icon.png) 0 0 no-repeat;
+	overflow: hidden;
+}
+.headbox h1{
+	margin:10px;
+}
+.headbox a{
+	color: #d8d8d8;
+}
+/*吊顶导航*/
+.maiNav a{
+	display: block;
+	width:90px;
+	height:50px;
+	float: left;
+	font:18px/50px "微软雅黑";
+	text-align: center;
+}
+.maiNav .panlink{
+	width:90px;
+	height:50px;
+	float: left;
+	border-left: 1px solid #2a2b2d;
+	border-right: 1px solid #2a2b2d;
+	position: relative;
+}
+.panlink .pLink{
+	display: none;
+}
+.maiNav a:hover,.maiNav div:hover{
+	background-color: #0f0f0f;
+}
+.maiNav div:hover .pLink{
+	display: block;
+}
+.panlink .trigle{
+	position: absolute;
+	right:10px;
+	top:22px;
+}
+/*吊顶右侧部分*/
+.headbox .topRgt{
+	height:20px;
+	margin-top: 11px;
+}
+.topRgt .customer{
+	
+}
+.topRgt a{
+	font:12px/28px "微软雅黑";
+}
+.customer em{
+	color: #e15f00;
+}
+.customer em,.customer a{
+	font:12px/28px "微软雅黑";
+	padding:0 10px ;
+	box-sizing: border-box;
+}
+.customer a{
+	width:70px;
+	height:28px;
+	background-color: #e82b1a;
+	border-radius: 2px;
+}
+.topRgt div,.topRgt a,.topRgt span,.topRgt em{
+	float: left;
+}
+.topRgt .line{
+	margin:6px 11px 6px 8px;
+}
+.topRgt .trigle{
+	margin:10px 10px 0;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.line{
+	width:1px;
+	height:16px;
+	background-color: #393939;
+	display: inline-block;
+	/*margin-left: 8px;*/
+}
+.trigle{
+	width:10px;
+	height:5px;
+	display:inline-block;
+	background: url(../img/bg_icon.png) -116px 0 no-repeat;
+}
+.bg{
+	background-image: url(../img/bg_icon.png);
+	background-repeat: no-repeat;
+}
+.clear{
+	overflow: hidden;
+	clear:both;
+}
+.posA{
+	position:relative;
+}

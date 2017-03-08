@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/pan.css" />
+	</head>
+	<body class="pan" id="pan">
+		<header class="headbox">
+			<h1 class="fl"><a href="javascript:;" class="log">百度云</a></h1>
+			<nav class="maiNav fl">
+				<a href="javascript:;">主页</a>
+				<div class="panlink">
+					<a href="javascript:;">网盘</a>
+					<span class="trigle fl"></span>
+					<ul class="pLink">
+						<!--<li><span></span><span>网盘</span></li>
+						<li><span></span><span>豆瓣搜索</span></li>-->
+					</ul>
+				</div>
+				<a href="javascript:;">分享</a>
+				<a href="javascript:;">应用</a>
+			</nav>
+			<div class="topRgt fr">
+				<div  class="customer">
+					<!--<em class="">超级会员低至六折</em>-->
+					<div>
+						<span class="bg"></span>
+						<span id="user">用户名</span>
+					</div>
+					<a href="javascript:;">会员中心</a>
+					<span class="line"></span>
+				</div>
+				<div>
+					<a href="javascript:;">客户端下载</a>
+					<span class="line"></span>
+				</div>
+				<div>
+					<a href="javascript:;">更多</a>
+					<span class="trigle"></span>
+				</div>
+			</div>
+		</header>
+		<section class="cont" id="cont">
+			<ul class="panleft fl" id="panleft">
+				<li><a href="pan.index.html#id=0" class="clearfix active"><span class="bg"></span><span>全部文件</span></a></li>
+				<li><a href="pan.index.html#t=2" class="clearfix"><span class="bg"></span><span>图片</span></a></li>
+				<li><a href="pan.index.html#t=1" class="clearfix"><span class="bg"></span><span>文档</span></a></li>
+				<li><a href="pan.index.html#t=4" class="clearfix"><span class="bg"></span><span>视频</span></a></li>
+				<li><a href="pan.index.html#t=5" class="clearfix"><span class="bg"></span><span>种子</span></a></li>
+				<li><a href="pan.index.html#t=3" class="clearfix"><span class="bg"></span><span>音乐</span></a></li>
+				<li><a href="pan.index.html#t=6" class="clearfix"><span class="bg"></span><span>其它</span></a></li>
+				<li><a href="pan.index.html#t=7" class="clearfix"><span class="bg"></span><span>我的分享</span></a></li>
+				<li><a href="pan.index.html#id=1" class="clearfix"><span class="bg"></span><span>回收站</span></a></li>
+			</ul>
+			
+			<section class="panCont fl" id="panCont">
+				<header>
+					<div id="upload" class="fl">
+						<span class="bg upl fl"></span>
+						<span class="fl">上传</span>
+						<div class="fr">
+							<span class="bg tri"></span>
+						</div>
+					</div>
+					<div id="createF" class="fl">
+						<span class="bg"></span>
+						<span>新建文件夹</span>
+					</div>
+					<div id="typchange" class="fr">
+						<span class="bg type1"></span>
+						<span class="bg type2"></span>
+					</div>
+				</header>
+				<div class="contbox">
+					<div class="filepath">
+						<div class="fptit">
+							<div class="fl" id="pathlist">
+								<!--<a href="pan.index.html#id=0">全部文件</a>-->
+								<span>全部文件</span>
+							</div>
+							<div class="fr">已全部加载，共
+								<span id="fnum">0</span>个
+							</div>
+						</div>
+						<div class="selbox">
+							<div class="fl">
+								<input type="checkbox" id="selAll"/>
+								<span>已选中<strong id="filenum">0</strong>个文件/文件夹</span>
+							</div>
+							<div class="fl probtn">
+								<input type="button" value="删除" id="delbtn"/>
+								<input type="button" value="移动到" id='moveTo'/>
+								<input type="button" value="复制到" id="copyTo"/>
+								<input type="text" value="0" id="hidbox"/>
+							</div>
+						</div>
+					</div>
+					<ul class="file" id="filebox">
+						<!--创建文件的格式-->
+						<!--<li class="bfile">
+							<div class="fileimg">
+								<div class="filesel">
+									<input type="checkbox" />
+								</div>
+								<img />
+							</div>			
+							<div class="textname">
+								<input type="text" class="inptext" value="新建文件夹"/>
+								<span class='bg fconcel'></span>
+								<span class='bg fconfirm'></span>
+							</div>
+						</li>
+						<li class="sfile">
+							<div class="fileimg">
+								<div class="filesel">
+									<input type="checkbox" />
+								</div>
+								<img />
+							</div>
+							<div class="textname">
+								<input type="text" class="inptext" value="新建文件夹"/>
+								<span class='bg fconcel'></span>
+								<span class='bg fconfirm'></span>		
+							</div>
+							<div class="filedate"><span>2016-6</span></div>
+						</li>-->
+					</ul>
+				</div>
+			</section>
+		</section>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/data.js" ></script>
+		<script type="text/javascript" src="js/Tools.js" ></script>
+		<script type="text/javascript" src="js/tree.js" ></script>
+		<script type="text/javascript" src="js/pan.js" ></script>
+		<script type="text/javascript" src="js/dragbox.js" ></script>
+		<script type="text/javascript" src="js/Dirbox.js" ></script>
+	</body>
+</html>

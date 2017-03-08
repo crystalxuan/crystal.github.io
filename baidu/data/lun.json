@@ -1,0 +1,8 @@
+{
+	"list":[
+       {"img":"img/bg1.jpg","id":"item1"},
+       {"img":"img/bg2.jpg","id":"item2"},
+       {"img":"img/bg3.jpg","id":"item3"},
+       {"img":"img/bg4.jpg","id":"item4"}
+	]
+}
