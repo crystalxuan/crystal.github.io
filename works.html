@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/works.css">
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/vue.js"></script>
+	<script type="text/javascript" src="js/vue-resource.min.js"></script>
 </head>
 <body>
 		<div id="header">
@@ -33,40 +35,37 @@
 			<div class="righthand"></div>
 			<h1>个人作品</h1>
 			<div class="content">
-				<ul>    
-					<li><a href="https://crystalxuan.github.io/crystal.github.io/aiqiyi-pc">
-						<div class="demo1">
-						  <div class="goin"><h1>点击进入</h1></div>
-					    </div>
-					</a></li>
-					<li><a href="https://crystalxuan.github.io/crystal.github.io/aiqiyi-mobile">
-						<div class="demo2">
-						  <div class="goin"><h1>点击进入</h1></div>
-					    </div>
-					</a></li>
-					<li><a href="https://crystalxuan.github.io/crystal.github.io/jquery">
-						<div class="demo3">
-						  <div class="goin"><h1>点击进入</h1></div>
-					    </div></a></li>
-					
-					<li><a href="https://crystalxuan.github.io/crystal.github.io/picture">
-                          <div class="demo5">
-						  <div class="goin"><h1>点击进入</h1></div>
-					    </div>
-					</a></li>
+				<ul class="clear">    
+					<li v-for="item in list">
+						<a v-bind:href="item.href">
+							<img v-bind:src="item.img">
+						</a>
+						<div class="black">查看详情</div>
+					</li>
 				</ul>
 			</div>
 		</div>
         <div id="footer"></div>
 </body>
 <script>
-	(function(){
-		$(".content li").mousemove(function(){
-            $(this).find(".goin").show();
-		});
-		$(".content li").mouseout(function(){
-			$(".goin").hide();
-		});
-	})();
+     var app = new Vue({
+     	el:'#content_out',
+     	data:{
+     		list:[]
+     	},
+     	mounted:function(){
+     		this.$nextTick(function(){
+                this.getData();
+     		})
+     	},
+     	methods:{
+            getData:function(){
+            	var _this = this;
+            	this.$http.get("data/list.json").then(function(response){
+                     _this.list = response.data.works;
+            	})
+            }
+     	}
+     })
 </script>
 </html>
