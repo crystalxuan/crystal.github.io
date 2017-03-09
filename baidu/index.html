@@ -53,7 +53,7 @@
 			<div class='backg'>
 				<ul class="imgMoving">
 					<transition-group name="fade" tag="ul">
-						<li v-for="(item,index) in list" v-bind:key="item.id" v-show="imgShow == index"><img v-bind:src="item.img"/></li>
+						<li v-for="(item,index) in list" v-bind:key="item.id" v-show="imgShow == index" v-on:mousemove="mouseIn(item)" v-on:mouseout="mouseOut()"><img v-bind:src="item.img"/></li>
 					<transition-group>
 				</ul>
 				<div class="point">
@@ -160,32 +160,48 @@
                    this.$nextTick(function(){
           	           $("#userName").focus();
           	           this.getView();
-          	           setInterval(function(){
-                          _this.imgShow +=1;
-                          if(_this.imgShow >=4){
-                          	 _this.imgShow = 0;
-                          }
-          	           },5000);
-
-                   });
-
-		    	},
-		    	computed:{
-
+          	           var time;
+          	           this.lunbo();
+          	       })
 		    	},
 		    	methods:{
-		    		//开始时显示
+		    		//开始时图片显示
 		    		getView:function(){
                        var _this = this;
                        this.$http.get("data/lun.json").then(function(res){
                        	  _this.list = res.data.list;
                        }); 
 		    		},
+		    		  //图片轮播
+		    		lunbo:function(){
+		    			var _this = this;
+          	          time = setInterval(function(){
+                            _this.imgShow +=1;
+                           if(_this.imgShow >=4){
+                          	 _this.imgShow = 0;
+                          }
+          	             },5000);
+		    		},
+		    		//点击按钮切换图片
 		    		dianji:function(index){
 		    			this.imgShow = index;	 
 		    		},
-                    moving:function(){
-
+                    mouseIn:function(item){
+                    	clearInterval(time);
+                    	var width = $(".backg").width()/2;
+                    	var height = $(".backg").height()/2;
+                    	var x = -(event.clientX - width)/55;
+                    	var y = -(event.clientY - height)/20;
+                        // console.log("x:"+x+",y:"+y);
+                        $(".backg ul.imgMoving li:hover img").css({
+                        	transform: "matrix(1.05, 0, 0, 1.05, "+x+","+ y+")"
+                        })
+                    },
+                    mouseOut:function(){
+                    	this.lunbo();
+                        $(".backg ul.imgMoving li img").css({
+                        	transform: "matrix(1, 0, 0, 1, 0, 0)"
+                        })
                     },
 		    		//用户名验证
 		    	    username:function(){
