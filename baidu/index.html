@@ -62,7 +62,7 @@
 				</div>
 			</div>
 			<form class="regiter">
-				<ul class="fl posA" v-if="show">
+				 <ul class="fl posA" v-if="show">
 					<li class="clearfix regti">
 						<span class="fl bg"></span>
 						<h5 class="fl">登陆百度账号</h5>
@@ -90,8 +90,7 @@
 						<a href="javascript:;" class="linkqq fl"><span class="bg"></span></a>
 						<a href="javascript:;" class="linkwb fl"><span class="bg"></span></a>
 					</li>
-
-				 </ul>
+				</ul>
 				<ul class="fl" v-else>
 					<li class="clearfix regti">
 						<span class="fl bg"></span>
@@ -124,7 +123,7 @@
 					
 				</ul>
 				<div class="regbtn fl" >
-					<a href="javascript:;" v-on:click="show=false" v-if="show">立即注册百度账号</a>
+					<a href="javascript:;" v-on:click="register()" v-if="show">立即注册百度账号</a>
 					<a href="javascript:;" v-on:click="show=true" v-else>立即登陆百度账号</a>
 				</div>
 			</form>
@@ -291,37 +290,38 @@
                  			return false;
                  		}
                  	},
+                 	register:function(){
+                 		$(".errwarn").remove();
+                 		this.show=false;
+                 	},
                  	//登录
                  	login:function(){
                  		var userName = $("#userName").val();
                  		var passWord = $("#passWord").val();
                  		if(userName == null || userName == ""){
                            $('#userName').addClass("err");
-                           this.warnerr("请输入用户名");
+                           this.warnerr("请输入用户名",".regiter ul.posA");
                  		}else if(passWord == null || passWord == ""){
                            $('#passWord').addClass("err");
-                           this.warnerr("请输入密码");
+                           this.warnerr("请输入密码",".regiter ul.posA");
                  		}else{
                  			$('#userName').removeClass("err");
                  			$('#passWord').removeClass("err");
-                 			
                            var pass = localStorage.getItem("lixuan"+userName);
                            if(passWord == pass){
                            	$(".errwarn").remove();
                            	  sessionStorage.lixuan = '{"name":"'+userName+'","password":"'+passWord+'"}';
                               window.location.href="pan.index.html";
                            }else{
-                              this.warnerr("密码错误或用户不存在！");
+                              this.warnerr("密码错误或用户不存在！",".regiter ul.posA");
                            }
                  		}
                  	},
                  	//错误提示框
-                 	warnerr:function(err){
+                 	warnerr:function(err,something){
                  	   $(".errwarn").remove();
-                       $('<p class="errwarn" style="width:'+$('.loadbtn').width()+'px"><span class="bg"></span>'+err+'</p>').appendTo($("ul"));
-                 	}
-
-
+                       $('<p class="errwarn" style="width:'+$('.loadbtn').width()+'px"><span class="bg"></span>'+err+'</p>').appendTo($(something));
+                 	} 
 		    	}
 		    });
             $(document).keydown(function (event) {

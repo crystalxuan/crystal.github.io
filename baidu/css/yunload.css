@@ -298,7 +298,7 @@ form:hover .remind{
 }
 .errwarn{
 	position:absolute;
-	top:75%;
+	bottom:5px;
 	color:red;
 	text-align:center
 }
